@@ -15,7 +15,7 @@ JavaScript
 Getting Started:
 To run the alarm clock project on your local machine, follow these steps:
 
-1. Clone the repository:
+1. Clone the repository:https://github.com/Aman5695/alarm_clock.git
 2. Navigate to the project directory: alarm-clock
 
 Usage:
@@ -34,4 +34,10 @@ Submit a pull request explaining the changes you've made.
 
 
 Author: Aman Sharma
+
+some images:
+![Screenshot (3)](https://github.com/Aman5695/alarm_clock/assets/91520686/5723076f-64d0-425e-a8ed-6975a8dbab88)
+![Screenshot (2)](https://github.com/Aman5695/alarm_clock/assets/91520686/07521b18-99b0-4ae6-9a7c-e44870485987)
+![Screenshot (1)](https://github.com/Aman5695/alarm_clock/assets/91520686/cdc94244-8291-405a-b68a-c07bd582b2f2)
+
 
