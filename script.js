@@ -66,7 +66,6 @@ function stop_alarm() {
 // check alarm function
 function check_alarm() {
   const alarm_times = JSON.parse(localStorage.getItem("alarm_times")) || [];
-  // console.log("alarm_times", alarm_times)
   if (alarm_times.length === 0) return;
   const current_time = new Date().toLocaleTimeString("en-US", {
     hour12: true,
@@ -75,9 +74,7 @@ function check_alarm() {
     second: "2-digit",
   });
   for (const alarm_time of alarm_times) {
-    console.log("yesssss 1", current_time, alarm_time);
     if (current_time === alarm_time) {
-      console.log("yesssss 2", current_time, alarm_time);
       play_alarm();
       alert("Wake Up ! Alarm Ringing");
     }
@@ -95,7 +92,6 @@ const alarmList = document.getElementById("alarmList");
 
 function renderAlarms() {
   alarmList.innerHTML = "";
-  console.log("alarm_time_array", alarm_time_array);
   const alarm_time_list = JSON.parse(localStorage.getItem("alarm_times")) || [];
   // const listItem = document.createElement('li');
   alarm_time_list.forEach((alarm_time, index) => {
@@ -106,10 +102,8 @@ function renderAlarms() {
     `;
     const deleteButton = listItem.querySelector(".delete-button");
     deleteButton.addEventListener("click", function () {
-      console.log("hello world");
       const index = this.dataset.index;
       alarm_time_array.splice(index, 1);
-      console.log("hello world 2", index, alarm_time_array);
       localStorage.setItem("alarm_times", JSON.stringify(alarm_time_array));
       renderAlarms();
     });
