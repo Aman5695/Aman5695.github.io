@@ -59,7 +59,7 @@ function set_alarm(e) {
 // stop alarm button function
 function stop_alarm() {
   alarm_sound.pause();
-  localStorage.clear();
+  //localStorage.clear();
   alarm_sound.currentTime = 0;
 }
 
