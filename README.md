@@ -1,3 +1,5 @@
+Alarm Clock Project
+
 This project is an alarm clock web application implemented using HTML, CSS, and JavaScript. It allows users to set alarms and receive notifications when the specified time is reached.
 
 Features:
